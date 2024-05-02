@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFESTYLE!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray */
+            color: #444; /* Dark gray */
+        }
+
+        header {
+            background-color:#ADD8E6; /* Coral */
+            color: #fff; /* White */
+            padding: 20px 0;
+            text-align: center;
+            font-size: 36px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            background-color: #333; /* Dark gray */
+            color: #fff; /* White */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff; /* White */
+            text-decoration: none;
+            padding: 0 20px;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555; /* Darker gray */
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 3fr 1fr; 
+            grid-gap: 20px;
+        }
+
+        .posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .post {
+            background-color: #fff; /* White */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post h2 {
+            margin-top: 0;
+            color: #333; /* Dark gray */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            line-height: 1.6;
+            color: #666; /* Medium gray */
+            margin-bottom: 20px;
+        }
+
+        .post img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .post img:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar {
+            background-color: #ddd; /* Light gray */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #333; /* Dark gray */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #333; /* Dark gray */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ff5f5f; /* Coral */
+        }
+
+        footer {
+            background-color: #ADD8E6; /* Coral */
+            color: #fff; /* White */
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        LIFESTYLE!
+    </header>
+
+    <nav>
+        <a href="#nature">Nature</a>
+        <a href="#food">Food</a>
+        <a href="#travel">Travel</a>
+        <a href="#health">Health</a>
+        <a href="#fitness">Fitness</a>
+    </nav>
+
+    <div class="container">
+        <div class="posts">
+            <div id="nature" class="post">
+                <h2>Exploring Nature's Beauty</h2>
+                <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="Nature">
+                <p>Step into the untouched wilderness and let nature's embrace awaken your senses.</p>
+            </div>
+            <div id="food" class="post">
+                <h2>Discovering Delicious Cuisine</h2>
+                <img src="https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714348800&semt=sph" alt="Food">
+                <p>Discover the magic of food as it transcends borders, bringing people together in celebration of life's simple pleasures.</p>
+            </div>
+            <div id="travel" class="post">
+                <h2>Adventures Around the World</h2>
+                <img src="https://images.hindustantimes.com/img/2023/01/10/1600x900/While-the-past-year-was-about-revenge-and-revival-_1673351689949.jpg" alt="Travel">
+                <p>Embark on thrilling journeys to exotic destinations, experiencing new cultures and creating unforgettable memories.</p>
+            </div>
+            <div id="health" class="post">
+                <h2>Wellness Tips for a Healthy Life</h2>
+                <img src="https://www.summahealth.org/-/media/project/summahealth/website/page-content/flourish/fb_hearthealth_940x788.webp" alt="Health">
+                <p>Discover holistic approaches to health and well-being to live a vibrant and fulfilling life.</p>
+            </div>
+            <div id="fitness" class="post">
+                <h2>Fitness Routines for a Strong Body</h2>
+                <img src="https://images.everydayhealth.com/images/everything-you-need-know-about-fitness-1440x810.jpg" alt="Fitness">
+                <p>Empower yourself with effective workout routines and fitness tips to achieve your fitness goals.</p>
+            </div>
+        
+        </div>
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#nature">Nature</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#travel">Travel</a></li>
+                <li><a href="#health">Health</a></li>
+                <li><a href="#fitness">Fitness</a></li>
+            </ul>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#nature">Discovering the Wonders of the Natural World</a></li>
+                <li><a href="#food">Exploring the World of Flavors</a></li>
+                <li><a href="#travel">Journeys Across the Globe</a></li>
+                <li><a href="#health">Wellness Tips </a></li>
+                <li><a href="#fitness">Fitness Routines </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Ovi's Blog
+    </footer>
+
+</body>
+</html>
